@@ -13,7 +13,6 @@ prices=[]
 
 description=[]
 
-reviews=[]
 
 
 for i in range(2,12):
@@ -45,15 +44,6 @@ for i in range(2,12):
         
         prices.append(p)
     
-
-    rev= box.find_all("div",class_="_3LWZlK")
-    
-
-    for i in rev:
-    
-        r=i.text
-        
-        reviews.append(r)
     
 
     desc= box.find_all("ul",class_="_1xgFaf")
